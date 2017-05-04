@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 
-public class Online extends AppCompatActivity {
+public class Local extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -16,8 +16,8 @@ public class Online extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_local:
-                    switchToLocal();
+                case R.id.navigation_online:
+                    switchToOnline();
                     return true;
                 case R.id.navigation_lyrics:
                     switchToLyrics();
@@ -28,8 +28,9 @@ public class Online extends AppCompatActivity {
                 case R.id.navigation_playing:
                     switchToPlaying();
                     return true;
-                case R.id.navigation_online:
+                case R.id.navigation_local:
                     return true;
+
             }
             return false;
         }
@@ -39,13 +40,13 @@ public class Online extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_online);
+        setContentView(R.layout.activity_local);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.navigation_online);
+        navigation.setSelectedItemId(R.id.navigation_local);
     }
-    public void switchToLocal() {
-        Intent intent = new Intent(this, Local.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+    public void switchToOnline() {
+        Intent intent = new Intent(this, Online.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
     public void switchToLyrics() {

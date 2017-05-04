@@ -11,4 +11,6 @@
     <string name="text_offline">On this screen user can choose music to play from local device storage.</string>
     <string name="text_online">On this screen user can search and play music from internet.</string>
     <string name="text_notifications">On this screen notifications about new songs of farovite musicians will be visible. Also important information will be shown.</string>
+    <string name="title_activity_online">Online</string>
+    <string name="title_activity_lyrics">Lyrics</string>
 </resources>
