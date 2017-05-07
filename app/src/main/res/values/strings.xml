@@ -5,12 +5,12 @@
     <string name="title_local">Local</string>
     <string name="title_online">Online</string>
     <string name="title_notifications">Notifications</string>
-
     <string name="text_playing">On this screen will be visible album cover and buttons necessary to control music like play, pause, next, previous.</string>
     <string name="text_lyrics">On this screen will be visible lyrics for currently playing music if possible to obtain.</string>
-    <string name="text_offline">On this screen user can choose music to play from local device storage.</string>
+    <string name="text_local">On this screen user can choose music to play from local device storage.</string>
     <string name="text_online">On this screen user can search and play music from internet.</string>
-    <string name="text_notifications">On this screen notifications about new songs of farovite musicians will be visible. Also important information will be shown.</string>
-    <string name="title_activity_online">Online</string>
-    <string name="title_activity_lyrics">Lyrics</string>
+    <string name="text_notifications">On this screen notifications about new songs of favorite musicians will be visible. Also important information will be shown.</string>
+    <string name="button_play">Play</string>
+    <string name="button_next">Next</string>
+    <string name="button_previous">Previous</string>
 </resources>
